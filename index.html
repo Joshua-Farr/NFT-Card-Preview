@@ -8,23 +8,49 @@
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  Equilibrium #3429
 
-  Our Equilibrium collection promotes balance and calm.
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+  <body>
 
-  
-</body>
+    <!-- Building the structrure for the entire card -->
+    <div class="wrapper">
+      <div class="hero"> 
+        <!-- Main NFT Image -->
+        <img id ="hero" src="/images/image-equilibrium.jpg" alt="">
+        
+        <!-- Title and Description -->
+        <div class="body"> 
+          <h3>Equilibrium #3429</h3>      
+          <P>Our Equilibrium collection promotes balance and calm.</P>      
+        </div>
+      </div>
+
+
+      <!-- Pricing information for the NFT -->
+      <main>
+        <div class="info1">
+          <img src="/images/icon-ethereum.svg" alt="">
+          <p class= "price" >0.041 ETH</p>
+        </div>
+        <div class="info2">
+          <img src="/images/icon-clock.svg" alt="">
+          <p class="remaining"> 3 days left</p>
+        </div>
+      </main>
+
+      <!-- Building out the footer,  Profile image and Creator name-->
+      <div class="footer">
+        <img src="/images/image-avatar.png" alt="">
+        <p>Creation of <span>Jules Whitmore</span></p>
+      </div>
+
+    </div>
+  </body>
 </html>
