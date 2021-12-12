@@ -44,7 +44,7 @@ h3{
 
 h3:hover{
     color: hsl(178, 100%, 50%) ;
-    cursor: point;
+    cursor: pointer;
 }
 
 p{
@@ -55,6 +55,49 @@ p{
 img{
     max-width: 100%;
 }
+
+/* Container for hero and overlay */
+.hero-img{
+    border-radius: 20px;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+/* hero Image sizing */
+.hero img{
+    border-radius: 15px;
+
+}
+
+.overlay {
+    background-color: rgba(0, 182, 158, 0.7);
+    height: 100%;
+    width: 100%;
+    max-height: 275px;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index:99;
+    opacity: 0;
+
+    /* Aligning the overlay image using CSS Grid */
+    display:grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .overlay img{
+    height: 35px;
+    margin: auto;
+  }
+
+  .overlay:hover {
+    opacity: .7;
+    transition: opacity .5s;
+    cursor: pointer;
+  }
 
 
 .wrapper{
@@ -74,24 +117,6 @@ img{
     /* border: 2px solid green; */
 }
 
-
-.hero img{
-    border-radius: 20px;
-    margin-bottom: 15px;;
-}
-
-.hero img::after{
-    content: url(/images/icon-view.svg);
-    background: hsl(178, 100%, 50%);
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.25s ease;
-
-}
 
 
 /* 
